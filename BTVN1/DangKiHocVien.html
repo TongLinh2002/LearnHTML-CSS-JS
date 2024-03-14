@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <style>
+        .container  {
+            display: flex;
+            flex-direction: row;
+        }
+        .column {
+            display: inline-block;
+            padding: 0 5px;
+        }
+
+        .column label,
+        .column input,
+        .column textarea,
+        .column select {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .radio-container {
+            display: flex;
+            align-items: center;
+        }
+        h2{
+            color:blue;
+        }
+        .column{
+            color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+        <h2>ĐĂNG KÝ HỌC VIÊN</h2>
+    
+    <form action="#" method="post">
+        <div class="container">
+            <div class="column">
+                <label for="fullname">Họ và tên:</label><br>            
+                <label for="dob">Ngày sinh</label> <br>         
+                 <label for="gender">Giới tính</label><br><br>           
+                <label for="address">Địa chỉ:</label><br><br>
+                <label for="class">Lớp:</label><br>
+                <label for="email">Email:</label><br>
+                <label for="phone">Điện Thoại:</label><br>
+            </div>
+            <div class="column">
+                <input type="text" id="fullname" name="fullname"required><br>
+                <input type="date" id="dob" name="dob" required><br>  
+
+                <div class="radio-container" style="color: black;">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Nam</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Nữ</label>
+                </div>
+                      
+                <textarea id="address" name="address" rows="4" cols="30" required></textarea><br>             
+                <select id="class" name="class" required>
+                    <option value="">--Chọn lớp--</option>
+                    <option value="class1">Lớp 1</option>
+                    <option value="class2">Lớp 2</option>
+                    <option value="class3">Lớp 3</option>
+                </select><br>            
+                <input type="email" id="email" name="email" required><br>            
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            </div>
+        </div>
+        <input type="submit" value="Đăng Ký">
+        <input type="button" value="Nhập lại">
+            </div>
+        </div>
+    </form>
+</table></body>
+</html>
